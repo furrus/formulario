@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hoja de Inscripción</title>
+<link href="css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h3>hoja de inscripción<br> para acceso a la formación</h3>
+<form>
+    <fieldset class="datosper">
+    	<legend id="leg1">Datos personales<a href="#asterisco">(*)</a></legend>
+        <table>
+          <tr>
+            <td>Apellidos:<br><input type="text" size="26"></td>
+            <td>Nombre:<br><input type="text"></td>
+            <td>DNI:<br><input type="text" maxlength="9" size="9" pattern="[0-9]{8}[A-Za-z]{1}" title="Ejemplo: 45695124R"></td>
+          </tr>
+          <tr>
+            <td>Nacido/a en:<br><input type="text"></td>
+            <td>
+                Provincia:<br>
+                <select>
+                    <option selected="selected"></option>
+                    <option>León</option>
+                    <option>Zamora</option>
+                    <option>Salamanca</option>
+                    <option>Valladolid</option>
+                    <option>Palencia</option>
+                    <option>Otros</option>
+                </select>
+            </td>
+            <td>Fecha nacimiento (dd/mm/aaaa):<br><input type="text" maxlength="10" size="10" pattern="[0-3]{1}[0-9]{1}/[0-1]{1}[0-9]{1}/[1-2]{1}[0-9]{1}[0-9]{1}[0-9]{1}"></td>
+          </tr>
+          <tr>
+            <td colspan="2">Domicilio (Calle, plaza y número):<br><input type="text" size="47"></td>
+            <td>Código Postal:<br><input type="text" maxlength="5" size="5" pattern="[0-9]{5}" title="Ejemplo: 24189"></td>
+          </tr>
+          <tr>
+            <td>Localidad:<br><input type="text"></td>
+            <td>
+                Provincia:<br>
+                <select>
+                    <option selected="selected">León</option>
+                    <option>Zamora</option>
+                    <option>Salamanca</option>
+                    <option>Valladolid</option>
+                    <option>Palencia</option>
+                    <option>Otros</option>
+                </select>
+            </td>
+            <td>Teléfono:<br><input type="text" maxlength="9" size="9" pattern="[0-9]{9}" title="Importante para localizarte"></td>
+          </tr>
+		</table>
+
+    </fieldset>
+    <fieldset class="requisitos">
+    <legend id="leg2">Requisitos de acceso</legend>
+    	<input name="blo1" type="radio" value="directo" onclick="document.getElementById('estudios').style.display = (this.checked) ? 'block':'none'">Directo<br>
+           <div id="estudios">
+              <input name="blo" type="radio" value="directo">Bachillerato LOGSE. Modalidad:<input type="text"><br>
+              <input name="blo" type="radio" value="directo">Bachillerato experimental<br>
+              <input name="blo" type="radio" value="directo">COU. Opción:<input type="text"><br>
+              <input name="blo" type="radio" value="directo">FP2<br>
+              <input name="blo" type="radio" value="directo">Otros (especifique):<input type="text"><br>
+           </div>
+        <input name="blo1" type="radio" value="otro" onclick="document.getElementById('estudios').style.display = (this.checked) ? 'none':'block'">Mediante prueba
+    </fieldset>
+    <fieldset class="solici">
+    	<legend id="leg3">Solicitud</legend>
+        El/la que suscribe desea ser admitido en este centro para cursar el ciclo formativo de grado superior:<br>
+        Ciclo formativo:
+        <select>
+            <option selected="selected"></option>
+            <option>Administración de sistemas Informáticos</option>
+            <option>Desarrollo de Aplicaciones Informáticas</option>
+        </select><br>
+        En caso de no ser admitido/a, solicita la admisión por orden de preferencia en los siguientes:
+        <table>
+            <tr>
+                <td><strong>Ciclos formativos</strong></td>
+                <td><strong>Centros</strong></td>
+                <td><strong>Localidad</strong></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="34"></td>
+                <td><input type="text" size="24"></td>
+                <td><input type="text" size="14"></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="34"></td>
+                <td><input type="text" size="24"></td>
+                <td><input type="text" size="14"></td>
+            </tr>
+        </table>
+        Modalidad de horario especial (marque):<input type="checkbox">
+    </fieldset>
+    <fieldset class="document">
+    	<legend id="leg4">Documentación presentada</legend>
+    	<input type="checkbox">Fotocopia DNI
+    	<input type="checkbox" id="certif">Certificado académico<br>
+    	<input type="checkbox">Otros documentos (especifique):
+    	<input type="text" size="30">
+    </fieldset>
+    <fieldset class="comunic">
+    	<legend id="leg5">Comunicación</legend>
+    	De acuerdo con el artículo 42.2 de la Ley 30/1992, de 26 de noviembre, de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común, según la nueva redacción de la Ley 4/1999, de 13 de enero, se informa que:
+        <ul>
+            <li>
+                El plazo máximo para resolver la presente solicitud es de 3 meses desde la fecha en que haya tenido entrada en el registro del órgano competente para la tramitación, sin perjuicio de lo previsto en el artículo 42.5 de la misma ley.
+            </li>
+            <li>
+                El efecto que producirá el silencio administrativo si transcurre el plazo sin que se haya dictado y notificado la resolución correspondiente, es desestimatorio de la solicitud.
+            </li>
+        </ul>
+        <input type="text">, <input type="text" size="4">de<input type="text">de<input type="text" size="4"><br>
+        <p id="person">La persona solicitante,</p>
+        <div id="sello">Sello de la entidad</div>
+        <p id="firma">Firma</p>
+    </fieldset>
+</form>
+<div id="pie"><a name="asterisco"></a>(*) Los datos personales contenidos en este impreso podrán ser incluidos en un fichero para su tratamiento, en el uso de las funciones propias que tiene atribuidas en el ámbito de sus competencias, pudiendo dirigirse a cualquier órgano de la misma para ejercitarlos derechos de acceso, rectificación, cancelación y oposición, según lo dispuesto en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal (BOE núm 298, de 14 de diciembre de 1999).</div>
+</body>
+</html>

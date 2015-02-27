@@ -1,0 +1,86 @@
+@charset "utf-8";
+body {
+	background-color: #FAFAFA;
+	width: 700px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+    font-size: 16px;
+    font-family: arial;
+}
+a {
+	color: blue;
+}
+h3 {
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #EAEAEA;
+}
+fieldset {
+	margin-bottom: 14px;
+}
+.datosper {
+	background-color: #eee;
+}
+.requisitos {
+	background-color: #FFFFE0;
+}
+.solici {
+	background-color: #ADD8E6;
+}
+.document {
+	background-color: #FFB6C1;
+}
+.comunic {
+	background-color: #FFE4C4;
+}
+#leg1 {
+	background-color: #FAFAFA;
+	border: 2px solid #EEE;
+}
+#leg2 {
+	background-color: #FAFAFA;
+	border: 2px solid #FFFFE0;
+}
+#leg3 {
+	background-color: #FAFAFA;
+	border: 2px solid  #ADD8E6;
+}
+#leg4 {
+	background-color: #FAFAFA;
+	border: 2px solid #FFB6C1;
+}
+#leg5 {
+	background-color: #FAFAFA;
+	border: 2px solid #FFE4C4;
+}
+#pie {
+	border: 3px dashed #666;
+	padding: 6px;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+#estudios {
+    margin-left: 15px;
+}
+#certif {
+    margin-left: 100px;
+}
+li {
+    margin: 7px;
+}
+#sello {
+    width: 150px;
+    height: 150px;
+    float: right;
+    background-color: white;
+    font-size: 11px;
+    text-align: center;
+    padding: 3px;
+    margin-top: -35px;
+    border: 1px solid black;
+}
+#firma {
+    margin-top: 120px;
+}
